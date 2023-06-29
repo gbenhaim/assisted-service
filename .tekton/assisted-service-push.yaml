@@ -142,6 +142,8 @@ spec:
         value: $(params.revision)
       - name: depth
         value: "100"
+      - name: refspec
+        value: "refs/tags refs/heads/{{source_branch}}"
       runAfter:
       - init
       taskRef:
